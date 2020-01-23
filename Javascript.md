@@ -113,3 +113,14 @@ console.log(bar); // ReferenceError
 
 console.log(i); // ReferenceError: i is not defined
 ```
+## hoisting
+```
+console.log(a); // predict ReferenceError: a is not defined, but is undefined
+var a = 10;
+```
+```
+var a ;
+console.log(a); // undefined 
+a = 5;
+```
+let 與 const 確實有 hoisting，與 var 的差別在於提升之後，var 宣告的變數會被初始化為 undefined，而 let 與 const 的宣告不會被初始化為 undefined，而且如果你在「賦值之前」就存取它，就會拋出錯誤。
