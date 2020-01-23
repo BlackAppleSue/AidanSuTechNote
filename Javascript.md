@@ -91,3 +91,25 @@ foo(); // foo is not defined
   console.log(a); // 3
 })();
 ```
+## Block Scope
+{ ... }
+```
+var foo = true;
+
+if (foo) {
+  const bar = foo * 2;
+  console.log(bar); // 2
+}
+
+console.log(bar); // ReferenceError
+```
+```
+{
+  let i;
+  for (i = 0; i < 10; i++) {
+    console.log(i);
+  }
+}
+
+console.log(i); // ReferenceError: i is not defined
+```
