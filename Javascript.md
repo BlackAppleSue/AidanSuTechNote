@@ -51,3 +51,28 @@ function doSomethingElse(a) {
   return a - 2;
 }
 ```
+## Function Declaration vs Function Expression
+
+function declaration
+
+```
+function foo() {
+  var a = 3;
+  console.log(a); // 3
+}
+
+foo();
+
+```
+
+function expression
+
+```
+var foo = function bar() {
+  var a = 3;
+  console.log(a); // 3
+};
+
+foo();
+
+```
