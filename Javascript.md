@@ -76,3 +76,18 @@ var foo = function bar() {
 foo();
 
 ```
+## Immediately Invoked Function Expression, IIFE
+```
+(function foo() {
+  var a = 3;
+  console.log(a); // 3
+})();
+
+foo(); // foo is not defined
+```
+```
+(function() {
+  var a = 3;
+  console.log(a); // 3
+})();
+```
