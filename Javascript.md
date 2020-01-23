@@ -9,3 +9,4 @@ ul->>li: Event Capturing
 li->> ul: Event Bubbling
 ul-x div : Event Bubbling
 Note right of div: event.<BR>stopPropagation()
+```
